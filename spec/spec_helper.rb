@@ -1,4 +1,14 @@
+require_relative 'setup_test_database.rb'
+
 # Set the environment to "test"
+ENV['ENVIRONMENT'] = 'test'
+
+RSpec.configure do |config|
+  config.before(:each) do
+    setup_test_database
+  end
+end
+
 if ENV['RACK_ENV'] == 'test'
   require 'simplecov'
   SimpleCov.start 'rack'
