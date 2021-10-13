@@ -14,6 +14,12 @@ As a time-pressed user
 So that I can save a website
 I would like to add the site's address and title to bookmark manager
 
+3rd user story:
+
+As a user
+So I can store bookmark data for later retrieval
+I want to add a bookmark to Bookmark Manager
+
 ## To create a new DB
 - Connect to psql
 - CREATE DATABASE bookmark_manager;
